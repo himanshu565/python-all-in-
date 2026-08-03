@@ -173,3 +173,32 @@ if "__RUN__" in globals():
     test_cases = run_cases
 
 main()
+
+# Q3 We need to filter the profanity out of our game's live chat feature! Complete the filter_messages function. It takes a list of chat messages as input and returns two new lists:
+
+# A list of the same messages but with all instances of the word dang removed.
+# A list containing the number of dang words that were removed from each message at that particular index.
+
+
+
+
+def filter_messages(messages):
+    filteredmsg = []
+    counter = []
+
+    for message in messages:
+        words = message.split()
+        good_word = []
+        counte = 0
+
+        for word in words:
+            if word == "dang":
+                counte += 1
+            else:
+                good_word.append(word)
+
+        new_st = " ".join(good_word)
+        filteredmsg.append(new_st)
+        counter.append(counte)
+
+    return filteredmsg, counter
