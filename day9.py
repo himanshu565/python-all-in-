@@ -7,6 +7,10 @@
 # A new list of all the players with odd-numbered indexes in the original list.
 
 
+
+def get_even_and_odd_teams(players):
+    pass
+
 run_cases = [
     (
         [
