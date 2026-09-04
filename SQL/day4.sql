@@ -42,3 +42,10 @@ SELECT
 FROM patients
 WHERE first_name LIKE 's____%s';
 /*
+-- q5 Show first name of patients that start with the letter 'C'
+SELECT
+  first_name
+FROM
+  patients
+WHERE
+  first_name LIKE 'C%'
